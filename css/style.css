@@ -24,7 +24,7 @@ main {
   justify-content: center;
 }
 main .imgs-container {
-  width: 45%;
+  width: 40%;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -113,7 +113,7 @@ main button {
   border-radius: 10px;
   font-size: 14px;
   font-weight: 600;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
   display: inline-flex;
   justify-content: center;
 }
@@ -127,21 +127,21 @@ i::before {
 }
 
 .main-img {
-  width: 450px;
+  width: 400px;
   display: flex;
   transform: translateX(0px);
   transition: 0.8s ease;
   margin-bottom: 20px;
 }
 .main-img div {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   margin: 0 26px;
   display: flex;
   justify-content: center;
 }
 .main-img div img {
-  width: 400px;
+  width: 350px;
 }
 
 .img-active {
@@ -176,7 +176,7 @@ i::before {
   border: 2px solid rgba(57, 57, 255, 0.842);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   main {
     display: block;
   }
@@ -188,6 +188,21 @@ i::before {
     width: 100%;
     display: block;
   }
+  main .main-container .colors-group {
+    margin-top: 20px;
+  }
+  main .main-container .colors-group div {
+    width: 190px;
+    height: 50px;
+  }
+  main .main-container .colors-group div span {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 7px;
+    left: 86px;
+  }
   .main-img {
     width: 100%;
   }
@@ -195,6 +210,13 @@ i::before {
     width: 100%;
   }
   .main-img div img {
-    width: 400px;
+    width: 350px;
+  }
+  .imgs-btn {
+    width: 350px;
+  }
+  .imgs-btn div {
+    width: 70px;
+    padding: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
