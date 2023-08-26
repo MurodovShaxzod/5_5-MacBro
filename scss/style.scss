@@ -157,21 +157,21 @@ i::before {
 }
 
 .main-img {
-  width: 500px;
+  width: 450px;
   display: flex;
   transform: translateX(0px);
   transition: .8s ease;
   margin-bottom: 20px;
 
   div {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     margin: 0 26px;
     display: flex;
     justify-content: center;
 
     img {
-      width: 450px;
+      width: 400px;
     }
   }
 }
@@ -233,7 +233,7 @@ i::before {
     width: 100%;
 
     img {
-      width: 450px;
+      width: 400px;
     }
   }
 }

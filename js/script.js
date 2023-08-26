@@ -112,7 +112,7 @@ addImgGold();
 let clickImg = document.querySelectorAll(".click-img");
 for(let i = 0; i < clickImg.length; i++) {
   clickImg[i].addEventListener("click", () => {
-    mainImg.style.transform = `translateX(${-i * 500}px)`;
+    mainImg.style.transform = `translateX(${-i * 450}px)`;
     for(let j = 0; j < clickImg.length; j++) {
       clickImg[i].classList.add("img-active");
       clickImg[j].classList.remove("img-active");
