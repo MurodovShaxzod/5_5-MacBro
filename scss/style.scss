@@ -157,21 +157,21 @@ i::before {
 }
 
 .main-img {
-  width: 450px;
-  height: 450px;
+  width: 500px;
   display: flex;
   transform: translateX(0px);
   transition: .8s ease;
+  margin-bottom: 20px;
 
   div {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     margin: 0 26px;
     display: flex;
     justify-content: center;
 
     img {
-      width: 400px;
+      width: 450px;
     }
   }
 }
@@ -211,7 +211,7 @@ i::before {
   border: 2px solid rgba(57, 57, 255, 0.842);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   main {
 
     display: block;
@@ -225,4 +225,16 @@ i::before {
       display: block;
     }
   }
+  
+.main-img {
+  width: 100%;
+
+  div {
+    width: 100%;
+
+    img {
+      width: 450px;
+    }
+  }
+}
 }
