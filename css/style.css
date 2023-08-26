@@ -1,0 +1,191 @@
+header {
+  width: 100%;
+  margin-bottom: 40px;
+  height: 40px;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 100;
+}
+.header h1 {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+main .imgs-container {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+main .main-container {
+  width: 45%;
+}
+main .main-container .title,
+main .main-container .text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+main .main-container .title h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+main .main-container .text h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+main .main-container .ddr-btn-group {
+  margin: 10px 0 20px 0;
+}
+main .main-container p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+main .main-container .colors-group {
+  margin-top: 20px;
+}
+main .main-container .colors-group div {
+  width: 230px;
+  border: 1px solid rgba(32, 32, 32, 0.295);
+  border-radius: 10px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+main .main-container .colors-group div:focus {
+  border: 2px solid rgba(57, 57, 255, 0.842);
+}
+main .main-container .colors-group div span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 10px;
+  left: 105px;
+}
+main .main-container .colors-group .gold {
+  margin-right: 10px;
+}
+main .main-container .colors-group .gold span {
+  background-color: gold;
+}
+main .main-container .colors-group .silver span {
+  background-color: silver;
+}
+main .main-container .colors-group .gray span {
+  background-color: gray;
+}
+main .main-container .price h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+main .main-container .price h3 {
+  font-size: 22px;
+  color: rgba(32, 32, 32, 0.699);
+  font-weight: 500;
+}
+main button {
+  background-color: #fff;
+  border: 1px solid rgba(22, 22, 22, 0.288);
+  width: 150px;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+}
+main button:focus {
+  border: 2px solid rgba(57, 57, 255, 0.842);
+}
+
+i::before {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.main-img {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  transform: translateX(0px);
+  transition: 0.8s ease;
+}
+.main-img div {
+  width: 400px;
+  height: 400px;
+  margin: 0 26px;
+  display: flex;
+  justify-content: center;
+}
+.main-img div img {
+  width: 400px;
+}
+
+.img-active {
+  border: 2px solid rgba(53, 53, 53, 0.753);
+  border-radius: 4px;
+}
+
+.imgs-btn {
+  width: 400px;
+  display: flex;
+}
+.imgs-btn div {
+  width: 80px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+.imgs-btn div:hover {
+  border: 2px solid rgba(53, 53, 53, 0.753);
+  border-radius: 4px;
+}
+.imgs-btn div img {
+  width: 100%;
+}
+
+.gray-img,
+.silver-img {
+  display: none;
+}
+
+.colors-active {
+  border: 2px solid rgba(57, 57, 255, 0.842);
+}
+
+@media (max-width: 500px) {
+  main {
+    display: block;
+  }
+  main .imgs-container {
+    width: 100%;
+    display: block;
+  }
+  main .main-container {
+    width: 100%;
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
